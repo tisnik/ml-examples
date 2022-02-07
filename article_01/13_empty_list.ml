@@ -1,0 +1,5 @@
+(* Prázdný seznam *)
+
+nil;
+
+[];
