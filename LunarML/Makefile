@@ -15,6 +15,7 @@ programs := \
 	mutual_recursion.lua \
 	pipe.lua \
 	some_none.lua \
+	some_none_2.lua \
 	string_join.lua \
 	sum_int.lua \
 	sum_real.lua \
@@ -35,6 +36,7 @@ programs := \
 	mutual_recursion.js \
 	pipe.js \
 	some_none.js \
+	some_none_2.js \
 	string_join.js \
 	sum_int.js \
 	sum_real.js \
