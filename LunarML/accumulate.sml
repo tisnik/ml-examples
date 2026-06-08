@@ -4,7 +4,7 @@ fun accumulate ([], a) = a
   | accumulate ((_::tail), a) = accumulate(tail, (1 + a));
 
 
-(* Funckce pro výpočet délky seznamu *)
+(* Funkce pro výpočet délky seznamu *)
 fun length lst = accumulate(lst, 0);
 
 print(Int.toString(length []));
