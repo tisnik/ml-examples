@@ -25,8 +25,8 @@ fun darker (r,g,b) =
 ;
 
 
-fun brightness (rgb, Dark)   = darker rgb
-  | brightness (rgb, Bright) = rgb
+fun brightness rgb Dark   = darker rgb
+  | brightness rgb Bright = rgb
 ;
 
 
@@ -41,16 +41,17 @@ fun basic_color_to_rgb Black   = (0,   0,   0)
   ;
 
 
-fun i2s integer = Int.toString(integer);
+fun i2s integer = Int.toString integer;
 
-fun rgb_as_string (r, g, b) =
-    "red=" ^ i2s(r) ^ ", green=" ^ i2s(g) ^ ", blue=" ^ i2s(b) ^ "\n";
+fun rgb_as_string r g b =
+    "red=" ^ i2s(r) ^ ", green=" ^ i2s(g) ^ ", blue=" ^ i2s(b) ^ "\n"
+;
 
 fun color_as_string (BasicColor c) = 
     let val (color, brightness_level) = c
         val rgb = basic_color_to_rgb color
-        val (r, g, b) = brightness(rgb, brightness_level)
-    in rgb_as_string(r, g, b)
+        val (r, g, b) = brightness rgb brightness_level
+    in rgb_as_string r g b
     end
 ;
 
@@ -72,4 +73,5 @@ print(color_as_string c5);
 
 val c6 = BasicColor(White, Bright);
 print(color_as_string c6);
+
 
