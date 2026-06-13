@@ -32,6 +32,9 @@ programs := \
 	pipe.lua \
 	pow_curry_1.lua \
 	pow_curry_2.lua \
+	pow_operator_1.lua \
+	pow_operator_2.lua \
+	pow_operator_3.lua \
 	some_none.lua \
 	some_none_2.lua \
 	string_join.lua \
@@ -71,6 +74,9 @@ programs := \
 	pipe.js \
 	pow_curry_1.js \
 	pow_curry_2.js \
+	pow_operator_1.js \
+	pow_operator_2.js \
+	pow_operator_3.js \
 	some_none.js \
 	some_none_2.js \
 	string_join.js \
